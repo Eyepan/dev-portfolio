@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useAppStore } from "@/stores/app";
-import { storeToRefs } from "pinia";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
 const showPicture = ref(false);
 </script>
@@ -15,7 +13,7 @@ const showPicture = ref(false);
         @mouseleave="showPicture = false"
         class="inline py-4 font-black tracking-wide text-9xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 hover:text-purple-500 hover:tracking-widest hover:font-light ease-in-out transition-all"
       >
-        Iyappan.
+        IYAPPAN
       </p>
       <img
         v-show="showPicture"
@@ -26,7 +24,7 @@ const showPicture = ref(false);
       />
     </div>
     <transition appear name="fade">
-      <div class="flex flex-row text-3xl text-gray-700 dark:text-gray-400 mt-4">
+      <div class="flex flex-row text-3xl text-gray-700 dark:text-gray-400">
         <div
           class="hover:text-blue-500 hover:tracking-widest transition-all ease-in-out"
         >
