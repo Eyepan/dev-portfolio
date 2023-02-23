@@ -1,10 +1,12 @@
 <template>
   <section
     id="about"
-    class="relative min-h-screen w-screen bg-gray-200 bg-gradient-to-b from-white dark:from-[#181818] to-zinc-300 dark:to-zinc-700 p-10 snap-center"
+    class="relative min-h-screen w-screen bg-gray-200 bg-gradient-to-b from-white dark:from-[#181818] to-purple-300 dark:to-purple-700 p-10 snap-start"
   >
     <div class="text-right">
-      <div class="text-7xl font-semibold hover:text-blue-500 transition-colors">
+      <div
+        class="text-7xl font-extrabold hover:text-blue-500 transition-colors"
+      >
         Who am I?
       </div>
       <div class="text-3xl mt-4 w-4/5 ml-[20%]">
@@ -20,7 +22,7 @@
     </div>
     <div class="mt-20">
       <div
-        class="text-7xl font-semibold hover:text-green-500 transition-colors"
+        class="text-7xl font-extrabold hover:text-green-500 transition-colors"
       >
         What do I know?
       </div>
@@ -37,7 +39,7 @@
       </div>
     </div>
     <div class="text-right mt-20">
-      <div class="text-7xl font-semibold hover:text-red-500 transition-colors">
+      <div class="text-7xl font-extrabold hover:text-red-500 transition-colors">
         How do I believe you?
       </div>
       <div class="text-3xl mt-4 w-4/5 ml-[20%]">
