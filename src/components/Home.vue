@@ -1,11 +1,29 @@
 <script setup lang="ts">
+import { useAppStore } from "@/stores/app";
+import { storeToRefs } from "pinia";
 import { ref } from "vue";
-
+const { loader } = storeToRefs(useAppStore());
 const showPicture = ref(false);
+
+async function incrementLoader() {
+  let intervalId = setInterval(() => {
+    loader.value += 0.2;
+    console.log(loader.value);
+    if (loader.value > 1) {
+      clearInterval(intervalId); // Stop the interval
+    }
+  }, 300);
+}
+
+incrementLoader();
+
+function showVisible(amount: number) {
+  return loader.value > amount ? 1 : 0;
+}
 </script>
 
 <template>
-  <section id="home" class="min-h-screen w-screen p-8 snap-start">
+  <section id="home" class="min-h-screen w-screen p-12 snap-start">
     <p class="text-7xl">Hi! I'm</p>
     <div class="flex flex-row justify-between">
       <p
@@ -23,27 +41,28 @@ const showPicture = ref(false);
         class="inline transition-all"
       />
     </div>
-    <transition appear name="fade">
-      <div class="flex flex-row text-3xl text-gray-700 dark:text-gray-400">
-        <div
-          class="hover:text-blue-500 hover:tracking-widest transition-all ease-in-out"
-        >
-          Engineer
-        </div>
-        <div class="px-2">|</div>
-        <div
-          class="hover:text-green-500 hover:tracking-widest transition-all ease-in-out"
-        >
-          Full Stack Developer
-        </div>
-        <div class="px-2">|</div>
-        <div
-          class="hover:text-red-500 hover:tracking-widest transition-all ease-in-out"
-        >
-          Problem Solver
-        </div>
+    <div class="flex flex-row text-3xl text-gray-700 dark:text-gray-400">
+      <div
+        :style="{ opacity: showVisible(0.2) }"
+        class="hover:text-blue-500 hover:tracking-widest transition-all ease-in-out"
+      >
+        Engineer
       </div>
-    </transition>
+      <div :style="{ opacity: showVisible(0.4) }" class="px-2">|</div>
+      <div
+        :style="{ opacity: showVisible(0.6) }"
+        class="hover:text-green-500 hover:tracking-widest transition-all ease-in-out"
+      >
+        Full Stack Developer
+      </div>
+      <div class="px-2" :style="{ opacity: showVisible(0.8) }">|</div>
+      <div
+        :style="{ opacity: showVisible(1.0) }"
+        class="hover:text-red-500 hover:tracking-widest transition-all ease-in-out"
+      >
+        Problem Solver
+      </div>
+    </div>
     <div class="absolute bottom-8 right-8">Scroll down to see more</div>
   </section>
 </template>

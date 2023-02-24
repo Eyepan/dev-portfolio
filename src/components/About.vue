@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="relative min-h-screen w-screen bg-gray-200 bg-gradient-to-b from-white dark:from-[#181818] to-purple-300 dark:to-purple-700 p-10 snap-start"
+    class="p-12 relative min-h-screen w-screen bg-gray-200 bg-gradient-to-b from-white dark:from-[#181818] to-purple-300 dark:to-purple-700 snap-start"
   >
     <div class="text-right">
       <div
