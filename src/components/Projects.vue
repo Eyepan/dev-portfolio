@@ -84,7 +84,7 @@
       <a
         href="https://github.com/Eyepan"
         target="_blank"
-        class="col-span-1 text-xl hover:text-3xl bg-transparent outline hover:outline-none dark:outline-white dark:text-white transition-all ease-in-out cursor-pointer relative flex flex-row min-h-[33vh] text-purple-900 hover:dark:text-black hover:bg-purple-100 dark:hover:bg-white p-5 rounded-3xl"
+        class="col-span-1 text-xl hover:text-3xl bg-transparent outline hover:outline-none dark:outline-white dark:text-white transition-all ease-in-out cursor-pointer relative flex flex-row min-h-[33vh] text-purple-900 hover:bg-green-100 dark:hover:bg-green-500 p-5 rounded-3xl"
       >
         <div class="m-5">
           <div class="mt-5">And a lot more coming soon</div>
