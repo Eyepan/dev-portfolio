@@ -10,14 +10,15 @@
         Who am I?
       </div>
       <div class="text-3xl mt-4 w-4/5 ml-[20%]">
-        I am primarily a full stack developer with a passion for all things
-        machine learning.
+        I am primarily a full-stack developer with a passion for machine
+        learning and artificial intelligence
       </div>
       <div class="text-xl mt-2 w-3/4 ml-[25%]">
-        I love everything to do with programming and coding competitions. When
-        I'm not studying, I code for fun and experiment with new ideas
-        <div class="text-gray-600 my-1 dark:text-gray-400"></div>
-        possibly going down rabbitholes for hours on end but who cares ;-;
+        I love everything related to programming and coding competitions. When
+        I'm not studying, I code for fun and experiment with new ideas.
+        <div class="text-gray-600 my-1 dark:text-gray-400">
+          Sometimes, I can go down rabbit holes for hours on end, but who cares?
+        </div>
       </div>
     </div>
     <div class="mt-20">
@@ -35,7 +36,7 @@
         MySQL, PostgreSQL
       </div>
       <div class="text-gray-600 my-1 dark:text-gray-400">
-        Oh! And gaming. Tons of it.
+        Oh, and I love gaming - tons of it!
       </div>
     </div>
     <div class="text-right mt-20">
@@ -43,18 +44,15 @@
         How do I believe you?
       </div>
       <div class="text-3xl mt-4 w-4/5 ml-[20%]">
-        Well that's what projects are for, right?
+        Well, that's where my projects come in
       </div>
-      <div class="text-xl mt-2 w-3/4 ml-[25%]">
-        Among many, many one-offs are some actual quality projects that I'd love
-        to show you!
+      <div class="text-2xl mt-4 w-4/5 ml-[20%]">
+        Among many one-off projects, I have some high-quality projects that I
+        would love to show you.
       </div>
-
       <div class="text-gray-600 my-1 dark:text-gray-400">
-        I wasn't kidding on the one-offs.
+        I wasn't kidding about the one-offs.
       </div>
     </div>
-
-    <div class="absolute bottom-8 right-8">Scroll down a bit more please?</div>
   </section>
 </template>
